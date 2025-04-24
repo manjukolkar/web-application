@@ -45,7 +45,7 @@ pipeline{
         }
          stage('Pushing image to repository'){
             steps{
-                sh 'docker push manjukolkar007/puneet-sir'
+                sh 'docker push vinaygowdru/puneet-sir'
             }
         }
         
