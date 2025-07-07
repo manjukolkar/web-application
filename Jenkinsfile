@@ -24,7 +24,7 @@ pipeline{
         }
         stage('Build and tag'){
             steps{
-                sh 'docker build -t div2808/project-1 .'
+                sh 'docker build -t div2808/project-2 .'
             }
         }
         stage('Containerisation'){
