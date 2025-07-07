@@ -24,13 +24,13 @@ pipeline{
         }
         stage('Build and tag'){
             steps{
-                sh 'docker build -t div2808/project-2 .'
+                sh 'docker build -t div2808/project-3 .'
             }
         }
         stage('Containerisation'){
             steps{
                 sh '''
-                docker run -it -d --name c9 -p 9009:8080 div2808/project-2
+                docker run -it -d --name c10 -p 9010:8080 div2808/project-3
                 '''
             }
         }
@@ -45,7 +45,7 @@ pipeline{
         }
          stage('Pushing image to repository'){
             steps{
-                sh 'docker push div2808/project-2'
+                sh 'docker push div2808/project-3'
             }
         }
         
